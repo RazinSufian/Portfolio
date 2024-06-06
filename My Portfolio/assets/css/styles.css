@@ -463,6 +463,12 @@ img {
   font-size: 30px;
   transition: color 0.3s ease;
 }
+.skills__item .item__name{
+
+  color: white;
+  font-weight: var(--body-font);
+  font-size: 10px;
+}
 
 
 
