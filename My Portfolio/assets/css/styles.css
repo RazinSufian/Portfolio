@@ -205,7 +205,8 @@ img {
   position: relative;
   display: grid; /* Ensure the home section uses grid layout */
   row-gap: 2rem; /* Adjust row gap to reduce space between elements */
-  padding: 4rem 0 5rem;
+  /* padding: 4rem 0 5rem; */
+  padding: 6rem 0 5rem;
 }
 
 .home__data {
@@ -217,6 +218,7 @@ img {
   color: #fff;
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  margin-left: -8%;
 }
 
 .home__title-color {
@@ -227,14 +229,16 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the start to remove any extra space */
-  margin-top: 0; /* Ensure no extra margin */
+  margin-top: -6%; /* Ensure no extra margin */
+
 }
 
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 2.5rem;
-  color: #1E2034;
+  color: rgb(6, 20, 33);
+  /* color: #1E2034; */
 }
 
 .home__social-icon:hover {
@@ -242,6 +246,7 @@ img {
 }
 
 .home__img {
+  margin-top: 50%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -252,9 +257,14 @@ img {
   fill: var(--first-color);
   position: relative;
   overflow: hidden;
+  transform: translateY(2rem); /* Move the blob down by 2rem */
 }
 
+
 .home__blob-img {
+  /* margin-top: 50%;
+  background-color: black; */
+  /* margin-top: 70%; */
   width: 360px; /* Original size */
   transition: transform 0.3s ease-in-out;
   transform: scale(1.7); /* Adjust the scale factor to zoom in */
@@ -280,6 +290,7 @@ img {
   }
 
   .home__img {
+    
     width: 300px;
     bottom: 25%;
   }
@@ -495,6 +506,7 @@ img {
 
 /* ===== WORK =====*/
 /* ===== WORK ===== */
+/* ===== WORK ===== */
 .work__container {
   position: relative;
   overflow: hidden;
@@ -509,11 +521,12 @@ img {
   gap: 1rem; /* Adjust the gap between images */
 }
 
-.work__img {
+.work__item {
   flex: 1 0 calc(33.3333% - 1rem); /* Adjust to include gap */
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  text-align: center; /* Center the text */
 }
 
 .work__img img {
@@ -523,6 +536,13 @@ img {
 
 .work__img img:hover {
   transform: scale(1.1);
+}
+
+.work__description {
+  padding: 0.5rem;
+  background-color: #fff; /* Add background color if needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  color: #333; /* Adjust text color as needed */
 }
 
 .work__slider-button {
@@ -545,6 +565,7 @@ img {
 .work__slider-button.next {
   right: 10px;
 }
+
 
 
 /* ===== CONTACT ===== */
