@@ -446,7 +446,7 @@ img {
   justify-content: center;
   align-items: center;
   height: 50px; /* Adjust the height as needed */
-  width: 50px;
+  width: 75px;
   border-radius: 10px;
   padding: 0 30px;
   border: 1px solid transparent;
@@ -469,6 +469,49 @@ img {
   font-weight: var(--body-font);
   font-size: 10px;
 }
+
+.skills__item .item__icon__big {
+  background: #1E2034;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Adjust the height as needed */
+  width: 75px;
+  border-radius: 10px;
+  padding: 0 30px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.skills__item .item__icon__big:hover {
+  border-color: #ffb742;
+}
+
+.skills__item .item__icon__big i {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.skills__item .tem__name__conjusted{
+
+  color: white;
+  font-weight: var(--body-font);
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -573,49 +616,19 @@ img {
 }
 
 
-
-/* ===== CONTACT ===== */
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
-}
-
 /* ===== CONTACT =====*/
-.contact__input {
-  width: 150%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-  margin-left: -19%;
- 
+
+.Contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 20px; /* Adjust as needed */
 }
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: 35%;
-}
+
+
+
+
+
 
 /* ===== FOOTER =====*/
 .footer {
