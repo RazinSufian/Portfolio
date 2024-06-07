@@ -234,12 +234,18 @@ img {
 }
 
 .home__social-icon {
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Set the width of the circular icon */
+  height: 50px; /* Set the height of the circular icon */
+  border-radius: 50%; /* Make the icon circular */
+  background-color: white; /* Background color of the circle */
   color: rgb(6, 20, 33);
-  /* color: #1E2034; */
+  font-size: 2.3rem;
+  text-align: center;
 }
+
 
 .home__social-icon:hover {
   color: var(--first-color);
@@ -330,24 +336,6 @@ img {
 }
 
 
-.about__container {
-  max-width: 1200px; /* Increase the max-width */
-  padding: 4rem 2rem; /* Increase the padding */
-  margin: 0 auto; /* Center the container */
-  display: grid;
-  row-gap: 2rem; /* Add space between rows */
-  column-gap: 2rem; /* Add space between columns */
-  background-color: #6a6d81;
-  border-radius: 15px; /* Add border radius */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .7); /* Add shadow */
-  row-gap: 2rem;
-  text-align: center;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  text-align: initial;
-  padding-top: 2rem;
-  color: white;
-}
 
 /* Optional: If you want to adjust the grid layout */
 @media screen and (min-width: 768px) {
@@ -390,6 +378,26 @@ img {
 
 /* ===== ABOUT =====*/
 
+.about__container {
+  max-width: 1200px; /* Increase the max-width */
+  padding: 4rem 2rem; /* Increase the padding */
+  margin: 0 auto; /* Center the container */
+  display: grid;
+  row-gap: 2rem; /* Add space between rows */
+  column-gap: 2rem; /* Add space between columns */
+  background-color: #6a6d81;
+  border-radius: 15px; /* Add border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .7); /* Add shadow */
+  row-gap: 2rem;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: initial;
+  padding-top: 2rem;
+  color: white;
+}
+
+
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
@@ -401,7 +409,92 @@ img {
   border-radius: 0.5rem;
 }
 
-/* ===== SKILLS =====*/
+/* ===== Hobbies_Using_LIst ===== */
+
+
+.hobbies__container {
+  max-width: 1200px; /* Container max-width */
+  padding: 4rem 2rem; /* Container padding */
+  margin: 0 auto; /* Center the container */
+  display: grid;
+  row-gap: 2rem; /* Space between rows */
+  column-gap: 2rem; /* Space between columns */
+  background-color: #6a6d81; /* Background color */
+  border-radius: 15px; /* Border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .7); /* Shadow */
+  text-align: center;
+  grid-template-columns: 1fr; /* Grid layout */
+  align-items: center;
+  color: white; /* Text color */
+}
+
+.hobbies__intro {
+  text-align: center; /* Center-align intro */
+  width: 100%; /* Full width */
+}
+
+.hobbies__subtitle {
+  font-size: 2rem; /* Subtitle font size */
+  margin-bottom: 1rem; /* Subtitle margin */
+}
+
+.hobbies__text {
+  font-size: 1.2rem; /* Text font size */
+  margin-bottom: 2rem; /* Text margin */
+}
+
+.hobbies__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.hobbies__table {
+  width: 60%;
+}
+
+.hobbies__list-title {
+  font-size: 1.5rem; /* List title font size */
+  margin-bottom: 1rem; /* List title margin */
+  text-align: center;
+}
+
+.anime-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #3c3f58; /* Table background color */
+  border-radius: 10px; /* Table border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Table shadow */
+  color: white; /* Table text color */
+}
+
+.anime-table th,
+.anime-table td {
+  padding: 1rem;
+ 
+}
+
+.anime-table th {
+  font-size: 1.2rem; /* Header font size */
+  text-align: center;
+}
+
+.anime-table td {
+  font-size: 1rem; /* Cell font size */
+}
+
+.hobbies__img {
+  margin-top: 5rem; /* Image margin */
+  width: 35%; /* Image width */
+  border-radius: 10px; /* Image border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Image shadow */
+}
+
+
+
+
+
 /* ===== SKILLS ===== */
 .skills__container {
   max-width: 1200px;
@@ -622,10 +715,32 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 20px; /* Adjust as needed */
 }
 
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Set the width of the circular icon */
+  height: 50px; /* Set the height of the circular icon */
+  border-radius: 50%; /* Make the icon circular */
+  background-color: white; /* Background color of the circle */
+  color: rgb(6, 20, 33);
+  font-size: 2.3rem;
+  text-align: center;
+}
 
+.gmail, .phone {
+  display: flex;
+  align-items: center;
+}
+
+.gmail_text, .phone_text {
+  font-weight: var(--body-font);
+  font-size: var(--font-semi);
+  color: white;
+  margin-left: 10px; /* Add some left margin to align with icons */
+}
 
 
 
