@@ -161,7 +161,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
+// Last Modification Time
 
+document.getElementById("location").innerHTML = "Page Location: " + window.location.href;
+document.getElementById("lastModified").innerHTML = "Last Modified: " + document.lastModified;
 
 
 sr.reveal('.about__img, .skills__subtitle, .skills__text',{}); 
