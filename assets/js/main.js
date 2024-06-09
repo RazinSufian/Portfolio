@@ -168,6 +168,7 @@ document.getElementById("lastModified").innerHTML = "Last Modified: " + document
 
 
 sr.reveal('.about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.skills__item,.about__subtitle, .about__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__title,.skills__item,.about__subtitle, .about__text, .hire-btn,.hobbies__content,.hobbies__img,.hobbies__text, .hobbies__subtitle, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
+// sr.reveal('.hobbies__intro,.hobbies__text, .hobbies__subtitle,',{delay: 900}); 
 sr.reveal('.skills__data, .work__img,',{interval: 200}); 

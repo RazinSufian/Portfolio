@@ -241,7 +241,8 @@ img {
   height: 50px; /* Set the height of the circular icon */
   border-radius: 50%; /* Make the icon circular */
   background-color: white; /* Background color of the circle */
-  color: rgb(6, 20, 33);
+  color: rgb(6, 20, 33); 
+
   font-size: 2.3rem;
   text-align: center;
 }
@@ -434,11 +435,13 @@ img {
 }
 
 .hobbies__subtitle {
+  margin-top: -5%;
   font-size: 2rem; /* Subtitle font size */
   margin-bottom: 1rem; /* Subtitle margin */
 }
 
 .hobbies__text {
+  margin-top: -0%;
   font-size: 1.2rem; /* Text font size */
   margin-bottom: 2rem; /* Text margin */
 }
@@ -451,8 +454,15 @@ img {
 }
 
 .hobbies__table {
+  margin-top: -5%;
   width: 60%;
 }
+.anime-link{
+  color: white;
+}
+
+
+
 
 .hobbies__list-title {
   font-size: 1.5rem; /* List title font size */
@@ -478,14 +488,14 @@ img {
 .anime-table th {
   font-size: 1.2rem; /* Header font size */
   text-align: center;
-}
+} s
 
-.anime-table td {
+.anime-table td { 
   font-size: 1rem; /* Cell font size */
 }
 
 .hobbies__img {
-  margin-top: 5rem; /* Image margin */
+  margin-top: -1rem; /* Image margin */  
   width: 35%; /* Image width */
   border-radius: 10px; /* Image border radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Image shadow */
@@ -598,16 +608,6 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .skills__img{
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
@@ -636,12 +636,14 @@ img {
   margin-left: 13rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   cursor: pointer;
-  transition: 0.3
+  transition: 0.3;
+  text-decoration: none; /* Ensure text decoration is none */
+  border: none; /* Remove any existing border */
 }
 
 .hire-btn:hover {
-  
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  border: 1px solid  #ffb742;
+  /* box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15); */
  
 }
 
